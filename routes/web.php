@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('comments/freeword/{word}', [App\Http\Controllers\FreeController::class, 'free']);
+Route::get('comments/random', [App\Http\Controllers\RandomController::class, 'rand']);
+Route::get('comments/{greeting}', [App\Http\Controllers\GreetingController::class, 'greeting']);
