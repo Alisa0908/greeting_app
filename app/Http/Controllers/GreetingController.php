@@ -29,7 +29,7 @@ class GreetingController extends Controller
                 $time = 'その他';
                 $msg = '正しく入力して下さい';
                 break;
-                }
+        }
             
         return view('practice.greeting', ['time'=>$time, 'msg'=>$msg]);
     }
